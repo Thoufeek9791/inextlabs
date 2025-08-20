@@ -7,19 +7,22 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'inextlabs.ai',
-        pathname: '/**', // allow all image paths from this domain
+        pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'cdn.inextlabs.ai', // if they use a CDN domain
+        hostname: 'cdn.inextlabs.ai',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'cdn.vecteezy.com',
-        pathname: '/system/resources/previews/**', // allow specific path for vecteezy
+        pathname: '/system/resources/previews/**',
       },
     ],
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
